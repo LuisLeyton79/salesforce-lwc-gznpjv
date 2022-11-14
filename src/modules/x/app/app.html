@@ -26,5 +26,13 @@
             </li>
         </template>
     </ul>
+    <div>
+        <template if:true={isTemplateOne}>
+          This is template one.
+        </template>
+        <template if:false={isTemplateOne}>
+          This is not template one. This is template two.
+        </template>
+      </div>
     
 </template>
