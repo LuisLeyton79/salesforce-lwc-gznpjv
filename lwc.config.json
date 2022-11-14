@@ -1,8 +1,8 @@
 {
     "modules": [
         {
-            "dir": "src/modules",
-            "dir": "src/LWC"
+            "dir": "src/modules"
+            
         }
     ]
    
