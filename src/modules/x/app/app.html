@@ -6,12 +6,23 @@
         <h2> name: {UpperCaseFullName} </h2>
                
     </div>
+    
     <ul>
-        <template for:each={contacts} for: item="contact">
-            <li key={contact.Id}S>
+        <template for:each={contacts} for:item="contact">
+            <li key={contact.Id}>
+                <div if:true={it.first} class="list-first"> </div>
                 {contact.Name}, {contact.Title}
             </li>
         </template>
     </ul>  
+
+    <ul> con iterardor
+        <template iterator:it={contacts}>
+            <li key={it.value.Id}>
+                {it.value.Name}, {it.value.Title}
+
+            </li>
+        </template>
+    </ul>
     
 </template>

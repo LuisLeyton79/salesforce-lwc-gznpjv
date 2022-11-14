@@ -4,6 +4,7 @@ export default class App extends LightningElement {
  @api name = 'Dios';
  firstName = 'Web';
  lastName = 'Component';
+ 
  contacts = [
   {
       Id: '003171931112854375',
